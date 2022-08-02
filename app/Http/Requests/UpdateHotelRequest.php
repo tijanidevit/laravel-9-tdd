@@ -24,8 +24,8 @@ class UpdateHotelRequest extends FormRequest
     public function rules() : array
     {
         return [
-            'name' => 'required|unique:users.',
-            'email' => 'required|email|unique:users'
+            'name' => 'required|unique:hotels',
+            'email' => 'required|email|unique:hotels'
         ];
     }
 }
